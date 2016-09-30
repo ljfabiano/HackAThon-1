@@ -19,17 +19,17 @@ public class EventItem {
     String description;
     @Column(nullable = false)
     String location;
-    @Column(nullable = false)
-    long time;
+//    @Column(nullable = false)
+//    long time;
     @Column(nullable = false)
     boolean isDone;
 
-    public EventItem(User user, String eventName, String description, String location, long time, boolean isDone) {
+    public EventItem(User user, String eventName, String description, String location, boolean isDone) {
         this.user = user;
         this.eventName = eventName;
         this.description = description;
         this.location = location;
-        this.time = time;
+//        this.time = time;
         this.isDone = isDone;
     }
 
@@ -77,13 +77,13 @@ public class EventItem {
         this.location = location;
     }
 
-    public long getTime() {
-        return time;
-    }
-
-    public void setTime(long time) {
-        this.time = time;
-    }
+//    public long getTime() {
+//        return time;
+//    }
+//
+//    public void setTime(long time) {
+//        this.time = time;
+//    }
 
     public boolean isDone() {
         return isDone;
